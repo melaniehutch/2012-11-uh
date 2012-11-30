@@ -1,0 +1,103 @@
+1. In this unit, we’ll explain what a shell is, and why you might want to work
+   as if the year was 1975.
+
+2. At a high level, computers really do four things.
+
+    3. They run programs.
+
+    4. They store data.
+
+    5. They communicate with each other.
+
+    6. And they interact with us.
+
+7. They can interact with us in many different ways.
+
+    8. For example, they can use telepathy, i.e., direct brain-computer links.
+       This technology is still in its infancy, but I for one look forward to
+       being assimilated as it matures.
+
+    9. Another way to interact with computers is to talk to them. No, to talk
+       to them, not dock the pen. Um, as you can tell, this technology is also
+       still somewhat immature.
+
+   10. What most of us use for interacting with computers is a WIMP interface:
+       windows, icons, mice, and pointers. While these technologies didn’t become
+       widespread until the 1980s, their roots go back to Doug Engelbart’s work in
+       the 1960s, which you can see in what has been called “The Mother of All
+       Demos“.
+
+   11. Going back even further, the only way to interact with early computers
+       was to toggle some switches--and even before then it was to rewire them.
+
+12. But in between, from the 1950s to the 1980s and into the present day,
+    people have used a technology that’s based on the old-fashioned typewriter,
+    and that technology is what we’re going to explore in this lecture.
+
+13. When I say “typewriter”, what I actually mean is…
+
+14. …a line printer connected to a keyboard, like the DECWriter LA-36 shown here.
+
+15. These devices only allowed input and output of the letters, numbers, and
+    punctuation found on a standard keyboard, so programming languages and
+    interfaces had to be designed around that constraint.
+
+16. Although if you were clever enough, you could find ways to do simple
+    pictures using just those characters.
+
+17. This kind of interface is called a CLUI, or command-line user interface (or
+    sometimes just CLI), to distinguish it from the GUIs, or graphical user
+    interfaces, that most of us are now used to.
+
+18. Normally, a user starts a CLUI session by logging in with a user ID and
+    password.
+
+19. The user then types a command.
+
+20. The computer executes the command and prints it output: in the case of
+    older terminals, literally printing the output onto paper, a line at a
+    time.
+
+21. The user then types another command…
+
+22. …which the computer executes, displaying output…
+
+23. …and so on until the user logs off and takes his or her roll of paper away
+    to study.
+
+24. From this description, you’d think that the user was sending commands
+    directly to the computer, and that the computer was sending output directly
+    to the user.
+
+25. In fact, there’s a program in between called a command shell.
+
+26. What the user types goes into the shell, which figures out what commands to
+    run and orders the computer to execute them. The computer then sends the
+    output of those programs back to the shell, which takes care of displaying
+    things to the user.
+
+27. The most popular Unix shell is bash, the Bourne again shell. (It’s called
+    that because it’s derived from a shell written by Stephen Bourne. This is
+    what passes for wit among programmers.) Bash is the default shell on most
+    modern implementations of Unix…
+
+28. Using it, or any other shell, feels a lot more like programming that like
+    using windows and mice. 
+
+29. Commands are terse—often only a couple of characters long—and their names
+    are often cryptic.
+
+30. So why should you use it? There are three good reasons.
+
+    31. First, many tools only have command-line interfaces, or are easiest to
+        use—particularly on remote machines—through the command line.
+
+    32. Second, the shell allows you to combine existing tools in powerful ways
+        to create new tools of your own with little or no programming. As we’ll
+        see later in this lecture, this lets you do a lot of work with just a
+        few keystrokes—once you have paid the up-front cost of learning how the
+        shell works and what its basic commands are.
+
+    33. Finally, if you pay the upfront cost of learning to use it, you can
+        actually do a lot of work more effectively from the command line than
+        with graphical applications
